@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+	<h1> YOU'RE LOGGED IN!</h1>
+<%else%>
+
+<h1>Image Majic </h1>
+
+<p>
+	A cleaner image manager! 
+</p>
+
+<p>
+	<%= link_to "Sign Up Now!", new_user_registration_path %>
+</p>
+
+<%end%>
+
